@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <title>Fake News Classification</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="text-center">
+        <img src="{{url_for('static', filename='image/fakenews.jpg')}}" alt="fake news image">
+    </div>
+
+    <form action="/" method="POST">
+        <div class="form-group">
+            <h2>Link to newspaper</h2>
+            <input type="text" class="form-control" id="input" name="input" aria-describedby="emailHelp"
+                   placeholder="Enter link" required>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg active mx-auto">Classify</button>
+    </form>
+</div>
+
+</body>
+</html>
